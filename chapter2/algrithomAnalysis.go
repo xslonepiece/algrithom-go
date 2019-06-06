@@ -57,13 +57,16 @@ func candidateElements(A []int) []int {
 	}else{
 		B := []int{}
 		for i:= 0; i< len(A);i += 2  {
-			j := i + 1
-			if j == len(A) {
-				j = i - 1
+			if i+ 1 == len(A) {
+				if A[i] == A[i - 2]  || A[i] == A[i - 1]{
+					B = append(B, A[i])
+				}
+			}else {
+				if A[i] == A[i + 1] {
+					B = append(B, A[i])
+				}
 			}
-			if A[i] == A[j] {
-				B = append(B, A[i])
-			}
+
 		}
 		return candidateElements(B)
 	}

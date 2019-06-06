@@ -20,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chapter2/algrithomAnalysis.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-725">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="132">
+              <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
               <folding>
                 <element signature="e#14#39#0" expanded="true" />
               </folding>
@@ -38,7 +38,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="E:\code\go" />
+  <component name="GOROOT" path="D:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -49,35 +49,35 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="97" />
-    <option name="y" value="62" />
-    <option name="width" value="1748" />
-    <option name="height" value="967" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="96" />
+    <option name="y" value="61" />
+    <option name="width" value="1749" />
+    <option name="height" value="968" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="algrithomgo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algrithomgo" type="462c0819:PsiDirectoryNode" />
+              <item name="algrithom-go" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algrithom-go" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="algrithomgo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algrithomgo" type="462c0819:PsiDirectoryNode" />
+              <item name="algrithom-go" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algrithom-go" type="462c0819:PsiDirectoryNode" />
               <item name="chapter2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -87,6 +87,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -135,17 +136,18 @@
       <workItem from="1559644136422" duration="4702000" />
       <workItem from="1559700943642" duration="16000" />
       <workItem from="1559724066807" duration="3586000" />
+      <workItem from="1559744093674" duration="271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13576000" />
+    <option name="totallyTimeSpent" value="13847000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="97" y="62" width="1748" height="967" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2648104" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24128686" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -154,7 +156,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3297362" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29886687" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -181,8 +183,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/chapter2/algrithomAnalysis.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-725">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="132">
+          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
           <folding>
             <element signature="e#14#39#0" expanded="true" />
           </folding>
