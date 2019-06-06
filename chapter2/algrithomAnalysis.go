@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"math/rand"
 )
 
 func main() {
@@ -158,4 +159,141 @@ func power2(a,b int) int {
 		}
 	}
 	return p
+}
+
+func Abs(a int) int  {
+	if a < 0{
+		return -a
+	}
+	return a
+}
+
+// 求最大子序列乘积
+// lastNegMul:记录上一个为负数的乘积。
+// firstNegMul:记录第一个为负数的乘积
+// 如果max mul为负数，则除以last or first使其为正。
+func maxMulOfSubsequence1(arr []int) {
+	maxMul, thisMul := 1, 1
+	firstNegMul, lastNegMul := 1,0
+	for _, v := range arr {
+		thisMul *= v
+		lastNegMul *= v	// 记录出现的负数，到下一个负数（不包含）之间的数的乘积。  循环结束后，该值为最后一个出现的负数及其以后数字的乘积。
+		if v < 0 {
+			lastNegMul = v;
+		}
+		if thisMul <0 && firstNegMul == 1 { // 记录第一个负数积
+			firstNegMul = thisMul
+		}
+		if Abs(thisMul) > maxMul{
+			maxMul = thisMul
+		}
+		if thisMul == 0 {
+			thisMul = 1
+			firstNegMul = 1
+		}
+	}
+	if maxMul < 0 && firstNegMul < 0 && lastNegMul < 0{
+		if firstNegMul < lastNegMul {
+			maxMul /= lastNegMul
+		}else {
+			maxMul /= firstNegMul
+		}
+	}
+	fmt.Println("max mul: ",maxMul)
+}
+
+func maxMulOfSubsequence2(arr []int) {
+	maxMul, thisMul := 1, 1
+	for i, _ := range arr {
+		thisMul = 1
+		for j:=i; j<len(arr); j++{
+			thisMul *= arr[j]
+			if thisMul > maxMul {
+				maxMul = thisMul
+			} else if arr[j] == 0 {
+				thisMul = 1
+			}
+		}
+	}
+	fmt.Println("min mul: ",maxMul)
+}
+
+/* 求最小子序列和*/
+func minSumOfSubsequence(arr []int)  {
+	minSum, sum := 0,0
+
+	for _,v := range arr{
+		sum += v
+		if sum < minSum {
+			minSum = sum
+		}else if (sum >= 0){
+			sum = 0
+		}
+	}
+	fmt.Println("min sum: ",minSum)
+}
+
+
+/* 生成前N个自然数的随机置换 */
+func randNumber1(n int)  {
+	arr := make([]int,n)
+	for i:=0; i < n; {
+		r := randInt(1,n)
+		if findInt(arr,r) == -1 {
+			arr[i] = r
+			i++
+		}
+	}
+	fmt.Println(arr)
+}
+
+func randNumber2(n int)  {
+	arr := make([]int,n)
+	used := make(map[int] int)
+	for i:=0; i < n; {
+		r := randInt(1,n)
+		if _, ok := used[r]; ok == false {
+			arr[i] = r
+			used[r] = 1
+			i++
+		}
+	}
+	fmt.Println(arr)
+}
+
+func randNumber3(n int)  {
+	arr := make([]int,n)
+	for i:=0; i < n; i++ {
+		arr[i] = i + 1
+	}
+	for i:= 0; i < n; i++{
+		r := randInt(1,n) - 1
+		arr[i], arr[r] = arr[r],arr[i]
+	}
+	fmt.Println(arr)
+}
+
+func findInt(arr []int,d int) int {
+	for i,v := range arr{
+		if v == d {
+			return i
+		}
+	}
+	return  -1
+}
+
+
+/* 随机数生成器：以相同的概率生成i到j之间的一个整数 */
+func randInt(i,j int) int{
+	min,d := i, j - i
+	if j < i {
+		min = j
+		d = -d
+	}
+	d++
+	if d == 0 {
+		return min
+	}
+
+	return min + rand.Int() % d
 }
