@@ -235,7 +235,10 @@ func minSumOfSubsequence(arr []int)  {
 
 
 /* 生成前N个自然数的随机置换 */
-func randNumber1(n int)  {
+func randNumber1(n int) []int {
+	if n <= 0 {
+		return nil
+	}
 	arr := make([]int,n)
 	for i:=0; i < n; {
 		r := randInt(1,n)
@@ -245,9 +248,13 @@ func randNumber1(n int)  {
 		}
 	}
 	fmt.Println(arr)
+	return arr
 }
 
-func randNumber2(n int)  {
+func randNumber2(n int) []int {
+	if n <= 0 {
+		return nil
+	}
 	arr := make([]int,n)
 	used := make(map[int] int)
 	for i:=0; i < n; {
@@ -259,9 +266,13 @@ func randNumber2(n int)  {
 		}
 	}
 	fmt.Println(arr)
+	return arr
 }
 
-func randNumber3(n int)  {
+func randNumber3(n int) []int {
+	if n <= 0 {
+		return []int{}
+	}
 	arr := make([]int,n)
 	for i:=0; i < n; i++ {
 		arr[i] = i + 1
@@ -271,6 +282,7 @@ func randNumber3(n int)  {
 		arr[i], arr[r] = arr[r],arr[i]
 	}
 	fmt.Println(arr)
+	return arr
 }
 
 func findInt(arr []int,d int) int {

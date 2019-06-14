@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feb86b9e-a875-4e8f-9f47-c49ed82d6e38" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/chapter1/introduction_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter2/algrithomAnalysis_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapter2/algrithomAnalysis.go" beforeDir="false" afterPath="$PROJECT_DIR$/chapter2/algrithomAnalysis.go" afterDir="false" />
     </list>
@@ -17,14 +19,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chapter2/algrithomAnalysis.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+            <state relative-caret-position="275">
+              <caret line="273" column="22" selection-start-line="273" selection-start-column="22" selection-end-line="273" selection-end-column="22" />
               <folding>
-                <element signature="e#14#39#0" expanded="true" />
+                <element signature="e#14#52#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chapter2/algrithomAnalysis_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+              <folding>
+                <element signature="e#14#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter1/introduction.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
@@ -35,24 +58,31 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go Application" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="D:\Go" />
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.11.2/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/chapter1/introduction_test.go" />
         <option value="$PROJECT_DIR$/chapter2/algrithomAnalysis.go" />
+        <option value="$PROJECT_DIR$/chapter2/algrithomAnalysis_test.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="237" />
-    <option name="width" value="1750" />
-    <option name="height" value="970" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="96" />
+    <option name="y" value="47" />
+    <option name="width" value="1680" />
+    <option name="height" value="922" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -60,7 +90,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -71,16 +100,22 @@
             <path>
               <item name="algrithom-go" type="b2602c69:ProjectViewProjectNode" />
               <item name="algrithom-go" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algrithom-go" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algrithom-go" type="462c0819:PsiDirectoryNode" />
               <item name="chapter2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -102,20 +137,69 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="go build algrithomAnalysis.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestRandNumber in algrithom-go/chapter2">
+    <configuration name="BenchmarkRandNumber in algrithom-go/chapter2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algrithomgo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/chapter2/algrithomAnalysis.go" />
-      <package value="algrithomgo" />
+      <working_directory value="$PROJECT_DIR$/chapter2" />
+      <framework value="gobench" />
+      <kind value="PACKAGE" />
+      <package value="algrithom-go/chapter2" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^BenchmarkRandNumber$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestRandNumber in algrithom-go/chapter2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algrithomgo" />
+      <working_directory value="$PROJECT_DIR$/chapter2" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="algrithom-go/chapter2" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestRandNumber$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestRandNumber1 in algrithom-go/chapter2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algrithomgo" />
+      <working_directory value="$PROJECT_DIR$/chapter2" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="algrithom-go/chapter2" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestRandNumber1$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestRandNumber2 in algrithom-go/chapter2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algrithomgo" />
+      <working_directory value="$PROJECT_DIR$/chapter2" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="algrithom-go/chapter2" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestRandNumber2$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestRandNumber3 in algrithom-go/chapter2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algrithomgo" />
+      <working_directory value="$PROJECT_DIR$/chapter2" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="algrithom-go/chapter2" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestRandNumber3$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build algrithomAnalysis.go" />
+        <item itemvalue="Go Test.TestRandNumber in algrithom-go/chapter2" />
+        <item itemvalue="Go Test.BenchmarkRandNumber in algrithom-go/chapter2" />
+        <item itemvalue="Go Test.TestRandNumber3 in algrithom-go/chapter2" />
+        <item itemvalue="Go Test.TestRandNumber2 in algrithom-go/chapter2" />
+        <item itemvalue="Go Test.TestRandNumber1 in algrithom-go/chapter2" />
       </list>
     </recent_temporary>
   </component>
@@ -137,17 +221,50 @@
       <workItem from="1559724066807" duration="3586000" />
       <workItem from="1559744093674" duration="271000" />
       <workItem from="1559863992284" duration="372000" />
+      <workItem from="1560244638801" duration="3002000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestRandNumber1_in_algrithom-go_chapter2 - 2019.06.11 at 17h 48m 23s.xml">
+      <configuration name="TestRandNumber1 in algrithom-go/chapter2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestRandNumber1_in_algrithom-go_chapter2 - 2019.06.11 at 17h 48m 36s.xml">
+      <configuration name="TestRandNumber1 in algrithom-go/chapter2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestRandNumber2_in_algrithom-go_chapter2 - 2019.06.11 at 17h 49m 33s.xml">
+      <configuration name="TestRandNumber2 in algrithom-go/chapter2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestRandNumber3_in_algrithom-go_chapter2 - 2019.06.11 at 17h 49m 36s.xml">
+      <configuration name="TestRandNumber3 in algrithom-go/chapter2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkRandNumber_in_algrithom-go_chapter2 - 2019.06.11 at 17h 53m 30s.xml">
+      <configuration name="BenchmarkRandNumber in algrithom-go/chapter2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkRandNumber_in_algrithom-go_chapter2 - 2019.06.11 at 17h 55m 25s.xml">
+      <configuration name="BenchmarkRandNumber in algrithom-go/chapter2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkRandNumber_in_algrithom-go_chapter2 - 2019.06.11 at 17h 55m 40s.xml">
+      <configuration name="BenchmarkRandNumber in algrithom-go/chapter2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkRandNumber_in_algrithom-go_chapter2 - 2019.06.11 at 17h 55m 50s.xml">
+      <configuration name="BenchmarkRandNumber in algrithom-go/chapter2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkRandNumber_in_algrithom-go_chapter2 - 2019.06.11 at 17h 56m 05s.xml">
+      <configuration name="BenchmarkRandNumber in algrithom-go/chapter2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestRandNumber_in_algrithom-go_chapter2 - 2019.06.11 at 17h 58m 42s.xml">
+      <configuration name="TestRandNumber in algrithom-go/chapter2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14219000" />
+    <option name="totallyTimeSpent" value="17221000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="96" y="47" width="1680" height="922" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24463807" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24725275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -156,7 +273,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29886687" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2987952" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -181,12 +298,36 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/chapter1/introduction_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter1/introduction.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chapter2/algrithomAnalysis.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        <state relative-caret-position="275">
+          <caret line="273" column="22" selection-start-line="273" selection-start-column="22" selection-end-line="273" selection-end-column="22" />
           <folding>
-            <element signature="e#14#39#0" expanded="true" />
+            <element signature="e#14#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter2/algrithomAnalysis_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          <folding>
+            <element signature="e#14#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
